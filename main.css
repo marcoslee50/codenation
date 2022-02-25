@@ -1,0 +1,301 @@
+html {background-image: url("images/eggs\ with\ faces\ in\ box.jpeg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;300&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+*{box-sizing: border-box;}
+
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+
+body {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("images/eggs\ with\ faces\ in\ box.jpeg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background: white;
+  height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+li {
+  height: 60vh;
+  flex-grow: 1;
+}
+
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+
+h1 {color: yellow;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    width: 1395px;
+    background-color:rgba(0, 0, 0, 0.8);}
+
+.p1 {width: 800px;
+    border: 5px solid #0080FF;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Prompt', sans-serif;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;}
+
+   
+
+.p2 {width: auto;
+    border: 5px solid #0080FF;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;}
+
+.p3 {width: auto;
+    border: 5px solid #0080FF;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Prompt', sans-serif;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;}
+
+#picsize1 {width: 16%;}
+#picsize2 {width: 100%;}
+#picsize3 {width: 30%;}
+#picsize4 {width: 30%;}
+#picsize5 {width: 25%;}
+#picsize6 {width: 30%;}
+#picsize7 {width: 30%;}
+.picsize8 {width: 25px;}
+
+
+
+.audiobox {width: 100%;}
+
+.container {display: flex;
+    min-height: 10vh;
+    max-width: 1500px;
+    flex-direction: row;
+    flex-wrap: wrap;}
+
+
+
+.box {
+    background: #0080FF;
+    font-size: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding: 15px;
+    width: 25%;
+  }
+
+  .box1 {
+    background:yellow;
+    font-size: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding: 15px;
+    width: 25%;
+  }
+    
+    /* set it too wide in order to have it auto scaled, or use percentage to fix them to screen */
+   
+
+.flex-position{ align-items: center; justify-content: right; flex-direction: column;}
+
+  .form {
+    background-color: rgba(21,23,43,0.9);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 700px;
+    padding: 20px;
+    width: 1500px;
+    justify-content: center;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+
+  
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    margin-top: 150px;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+
+  .center {
+    text-align: center;
+    justify-content: center;
+  }
+
+  
+
+  .menu {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+  }
+ 
+
+
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed; */
+    /* margin-bottom: auto; */
+  }
+  
